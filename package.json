@@ -1,0 +1,18 @@
+{
+  "name": "pause-vercel-projects",
+  "packageManager": "yarn@4.1.0+sha256.81a00df816059803e6b5148acf03ce313cad36b7f6e5af6efa040a15981a6ffb",
+  "type": "module",
+  "devDependencies": {
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "prettier": "^3.2.5",
+    "vercel": "^33.5.2"
+  },
+  "dependencies": {
+    "got": "^14.2.0"
+  },
+  "scripts": {
+    "start": "vercel dev",
+    "test": "node test.js"
+  }
+}
