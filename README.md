@@ -24,6 +24,10 @@ You can the deployed webhook with the included test script:
 yarn test pause --url https://your_deployment_name.vercel.app
 ```
 
+## Disclaimer
+
+This has not yet been tested in production, i.e. called by the vercel spend management webhook and actually paused projects.
+
 ## Acknowledgements
 
 Code copied and adapted from https://gist.github.com/borispoehland/2738d2edd62e83f332260a80eb5a9335

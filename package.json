@@ -11,6 +11,7 @@
   "dependencies": {
     "got": "^14.2.0"
   },
+  "license": "MIT-0",
   "scripts": {
     "start": "vercel dev",
     "test": "node test.js"
