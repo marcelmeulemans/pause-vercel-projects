@@ -4,7 +4,7 @@ This small repo implements a webhook handler that pauses all your vercel project
 
 ## Why
 
-Vercel **will** bill you for any metered usage traffic that hits your deployments during DDoS attack and Vercel does not offer and automatic spend cap. This means that your costs can potentially sky rocket similar to [this](https://news.ycombinator.com/item?id=39520776) story. See also:
+Vercel **will** bill you for any metered usage traffic that hits your deployments during DDoS attack and Vercel does not offer an automatic spend cap. This means that your costs can potentially sky rocket similar to [this](https://news.ycombinator.com/item?id=39520776) story. For more details see:
 
 https://vercel.com/docs/accounts/spend-management
 
@@ -18,10 +18,11 @@ This repo can be deployed directly to vercel, just fork and then add from the Ve
 
 ## Testing
 
-You can the deployed webhook with the included test script:
+You can test the deployed webhook using:
 
 ```
-yarn test pause --url https://your_deployment_name.vercel.app
+yarn pause --url https://your_deployment_name.vercel.app
+yarn unpause --url https://your_deployment_name.vercel.app
 ```
 
 ## Disclaimer
