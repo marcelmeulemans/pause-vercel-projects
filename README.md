@@ -16,6 +16,14 @@ This repo can be deployed directly to vercel, just fork and then add from the Ve
 - `VERCEL_TEAM_ID` Your team id found under Team > Settings > General > Team Id.
 - `VERCEL_TOKEN` Token for authenticating to the vercel REST API found under Settings > Tokens > Create a new token.
 
+## Testing
+
+You can the deployed webhook with the included test script:
+
+```
+yarn test pause --url https://your_deployment_name.vercel.app
+```
+
 ## Acknowledgements
 
 Code copied and adapted from https://gist.github.com/borispoehland/2738d2edd62e83f332260a80eb5a9335

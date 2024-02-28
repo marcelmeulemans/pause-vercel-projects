@@ -12,14 +12,14 @@ async function post(body, { url = DEFAULT_URL } = {}) {
     headers: { "X-Vercel-Signature": sha1(bodyBuffer, INTEGRATION_SECRET) },
     body: bodyBuffer,
   });
-  return response.statusMessage;
+  return `${url}: ${response.statusMessage}`;
 }
 
 program
   .command("pause")
   .description("test pausing all projects in your vercel team")
   .option("-u --url [url]", "change the url to test with")
-  .action(async (_, options) => {
+  .action(async (options) => {
     console.log(await post({}, options));
   });
 
@@ -27,7 +27,7 @@ program
   .command("unpause")
   .description("test pausing all projects in your vercel team")
   .option("-u --url [url]", "change the url to test with")
-  .action(async (_, options) => {
+  .action(async (options) => {
     console.log(await post({ type: "endOfBillingCycle" }, options));
   });
 
